@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:hivve/ui/home_screen.dart';
 
 class DetailsScreen extends StatefulWidget {
   const DetailsScreen({Key? key}) : super(key: key);
@@ -206,15 +207,22 @@ class _DetailsScreenState extends State<DetailsScreen> {
               ),
             ),
             InkWell(
-                onTap: () {},
+                onTap: () {
+                  Get.to(const HomeScreen());
+                },
                 child: Container(
                   width: 330,
-                  height: 50,decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),color: Colors.blue),
+                  height: 50,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.blue),
                   child: const Center(
                       child: Text(
                     'Book Now',
-                    style: TextStyle(fontSize: 25,color: Colors.white, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontSize: 25,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
                   )),
                 ))
           ],
