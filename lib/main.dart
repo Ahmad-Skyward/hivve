@@ -3,6 +3,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:hive/hive.dart';
 import 'package:hivve/routes/pages.dart';
 import 'package:hivve/ui/home_screen.dart';
+import 'package:hivve/ui/splash_screen.dart';
 import 'package:path_provider/path_provider.dart';
 
 import 'models/notes_models.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const SplashScreen(),
       getPages: AppRoutes.appRoutes(),
     );
   }

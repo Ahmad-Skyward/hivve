@@ -106,7 +106,10 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
           title: const Text(
             'Hive DB',
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+                backgroundColor: Colors.amber),
           ),
           backgroundColor: Colors.deepPurple),
       body: ValueListenableBuilder<Box<NotesModel>>(
