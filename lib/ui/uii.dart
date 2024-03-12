@@ -78,7 +78,9 @@ class _NewScreenState extends State<NewScreen> {
                           CupertinoIcons.arrow_right,
                           color: Colors.lightBlue,
                         ),
-                        onPressed: () { Get.to(const DetailsScreen());}),
+                        onPressed: () {
+                          Get.to(const DetailsScreen());
+                        }),
                   ],
                 ),
               ],
@@ -223,7 +225,9 @@ class _NewScreenState extends State<NewScreen> {
                         TextButton.icon(
                             label: const Text(
                               'View all',
-                              style: TextStyle(color: Colors.lightBlue,),
+                              style: TextStyle(
+                                color: Colors.lightBlue,
+                              ),
                             ),
                             icon: const Icon(CupertinoIcons.arrow_right,
                                 color: Colors.lightBlue),
