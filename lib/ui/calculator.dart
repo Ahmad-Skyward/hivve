@@ -107,7 +107,7 @@ class _CalculatorState extends State<Calculator> {
             const SizedBox(height: 20),
             Row(
               children: [
-                textButton('7'
+                textButton('6'
                     ''),
                 const SizedBox(width: 7
                 ),
