@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:hivve/ui/details_screen.dart';
 
 class NewScreen extends StatefulWidget {
   const NewScreen({super.key});
@@ -65,22 +67,20 @@ class _NewScreenState extends State<NewScreen> {
                         fontSize: 20),
                   ),
                 ),
-                TextButton(
-                    onPressed: () {},
-                    child: Column(
-                      children: [
-                        TextButton.icon(
-                            label: const Text('View all',
-                                style: TextStyle(
-                                  color: Colors.lightBlue,
-                                )),
-                            icon: const Icon(
-                              CupertinoIcons.arrow_right,
+                Column(
+                  children: [
+                    TextButton.icon(
+                        label: const Text('View all',
+                            style: TextStyle(
                               color: Colors.lightBlue,
-                            ),
-                            onPressed: () {}),
-                      ],
-                    )),
+                            )),
+                        icon: const Icon(
+                          CupertinoIcons.arrow_right,
+                          color: Colors.lightBlue,
+                        ),
+                        onPressed: () { Get.to(const DetailsScreen());}),
+                  ],
+                ),
               ],
             ),
             SizedBox(

@@ -4,4 +4,5 @@ class RouteNames {
   static const String viewImage = '/viewImage';
   static const String calculator = '/calculator';
   static const String newScreen = '/newScreen';
+  static const String detailsScreen = '/detailsScreen';
 }
