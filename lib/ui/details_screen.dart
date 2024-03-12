@@ -29,7 +29,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
           children: [
             SizedBox(
               width: double.infinity,
-              height: 450,
+              height: 40,
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
